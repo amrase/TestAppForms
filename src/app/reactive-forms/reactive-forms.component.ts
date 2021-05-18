@@ -15,7 +15,7 @@ export class ReactiveFormsComponent implements OnInit {
   ngOnInit(): void {
     this.registerForm = this.formBuilder.group({
       firstName: ['',Validators.required],
-      lastName: ['',Validators.required],
+      lastName: ['',[Validators.required,Validators.maxLength(10)]],
       address: this.formBuilder.group({
         street:[],
         zip:[],

@@ -7,13 +7,15 @@ import { TestFormComponent } from './test-form/test-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CourseFormComponent } from './course-form/course-form.component';
 import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
+import { EmployeeComponent } from './employee/employee.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestFormComponent,
     CourseFormComponent,
-    ReactiveFormsComponent
+    ReactiveFormsComponent,
+    EmployeeComponent
   ],
   imports: [
     BrowserModule,
